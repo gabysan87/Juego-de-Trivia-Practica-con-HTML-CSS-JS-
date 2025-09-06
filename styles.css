@@ -101,3 +101,41 @@ h1 {
   cursor: pointer;
   transition: transform 0.04s ease, box-shadow 0.2s ease, opacity 0.2s ease;
 }
+
+.btn:active {
+  transform: translateY(1px);
+}
+.btn-primary {
+  background: #4f46e5;
+  color: #fff;
+  box-shadow: 0 6px 16px rgb(79, 70, 229, 0.3);
+}
+
+.btn-primary:hover {
+  opacity: 0.95;
+  box-shadow: 0 8px 20px rgba(79, 70, 229, 0.35);
+}
+
+.btn-seondary {
+  background: #e5e7eb;
+  color: #111827;
+}
+.btn-seondary:hover {
+  opacity: 0.95;
+}
+
+/* Puntaje */
+.score {
+  text-align: center;
+  margin-top: 18px;
+  font-size: 1.15rem;
+  font-weight: 800;
+}
+
+/* Responsive */
+@media (max-width: 560px) {
+  .container {
+    margin: 24px 12px;
+    padding: 16px;
+  }
+}
