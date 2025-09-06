@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Juego de Trivia</title>
+  </head>
+  <body>
+    <main class="container" role="main">
+      <h1>Juego de trivia</h1>
+      <p class="sub">Responde las preguntas y pulsa "Comprobar respuestas"</p>
+
+      <!-- Primera pregunta -->
+      <section class="question">
+        <label for="q1"> 1. ¿Cual es la capital de Francia?</label>
+        <div class="input-row">
+          <input
+            id="q1"
+            type="text"
+            placeholder="Escribe tu respuesta"
+            data-answer="parís"
+          />
+          <span class="feedback" id="f1" aria-live="polite"></span>
+        </div>
+      </section>
+
+      <!-- Segunda pregunta -->
+      <section class="question">
+        <label for="q2">
+          2. ¿Cual es el planeta mas grande del sistema solar?</label
+        >
+        <div class="input-row">
+          <input
+            id="q2"
+            type="text"
+            placeholder="Escribe tu respuesta"
+            data-answer="júpiter"
+          />
+          <span class="feedback" id="f2" aria-live="polite"></span>
+        </div>
+      </section>
+
+      <!-- Tercera pregunta -->
+      <section class="question">
+        <label for="q3"> 3. ¿Quien pinto la mona lisa?</label>
+        <div class="input-row">
+          <input
+            id="q3"
+            type="text"
+            placeholder="Escribe tu respuesta"
+            data-answer="leonardo da vinci"
+          />
+          <span class="feedback" id="f3" aria-live="polite"></span>
+        </div>
+      </section>
+
+      <!-- Acciones -->
+      <div class="actions">
+        <button id="checkBtn" class="btn btn-primary" type="button">
+          Comprobar respuestas
+        </button>
+        <button id="resetBtn" class="btn btn-secondary" type="button">
+          Reiniciar
+        </button>
+      </div>
+
+      <!-- Puntaje Final -->
+      <p id="score" class="score" aria-live="polite"></p>
+    </main>
+
+    <script src="/javascript.js"></script>
+  </body>
+</html>
